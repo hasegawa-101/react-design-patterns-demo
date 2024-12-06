@@ -1,6 +1,6 @@
 import { TodoPagePresentation } from "./presentational";
 
-export default async function TodoListContainer() {
+export async function TodoListContainer() {
     const res = await fetch("https://dummyjson.com/todos/random", {
       next: {
         revalidate: 0,
