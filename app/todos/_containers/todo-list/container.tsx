@@ -8,7 +8,6 @@ export async function TodoListContainer() {
     });
 
     const todo = await res.json();
-    //test
   
     return <TodoPagePresentation todo={todo} />;
   }
